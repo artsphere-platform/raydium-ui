@@ -55,6 +55,9 @@ export function getSwapOutAmount(
   slippage: number
 ) {
   const { coin, pc, fees } = poolInfo
+
+  console.log("POOL INFO", poolInfo)
+
   const { swapFeeNumerator, swapFeeDenominator } = fees
 
   if (fromCoinMint === coin.mintAddress && toCoinMint === pc.mintAddress) {

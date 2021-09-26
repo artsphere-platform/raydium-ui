@@ -99,6 +99,14 @@ export const TOKENS: Tokens = {
     referrer: 'HTcarLHe7WRxBQCWvhVB8AP56pnEtJUV2jDGvcpY3xo5',
     tags: ['raydium']
   },
+  KEKW: {
+    symbol: 'KEKW',
+    name: 'KEKW',
+    mintAddress: '2QK9vxydd7WoDwvVFT5JSU8cwE9xmbJSzeqbRESiPGMG',
+    decimals: 9,
+    referrer: 'FKocyVJptELTbnkUkDRmT7y6hUem2JYrqHoph9uyvQXt',
+    tags: ['raydium']
+  },
   BTC: {
     symbol: 'BTC',
     name: 'Wrapped Bitcoin',
@@ -1434,6 +1442,15 @@ export const LP_TOKENS: Tokens = {
 
     mintAddress: 'A8ZYmnZ1vwxUa4wpJVUaJgegsuTEz5TKy5CiJXffvmpt',
     decimals: TOKENS.GRAPE.decimals
+  },
+  'KEKW-USDC-V4': {
+    symbol: 'KEKW-USDC',
+    name: 'KEKW-USDC LP',
+    coin: { ...TOKENS.KEKW },
+    pc: { ...TOKENS.USDC },
+
+    mintAddress: 'FJJT7yUJM9X9SHpkVr4wLgyfJ3vtVLoReUqTsCPWzof2',
+    decimals: TOKENS.KEKW.decimals
   }
 }
 

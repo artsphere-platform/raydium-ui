@@ -473,7 +473,8 @@ import {
   LiquidityPoolInfo
 } from '@/utils/pools'
 
-const RAY = getTokenBySymbol('RAY')
+const KEKW = getTokenBySymbol('KEKW')
+const USDC = getTokenBySymbol('USDC')
 
 export default Vue.extend({
   components: {
@@ -518,8 +519,8 @@ export default Vue.extend({
       selectFromCoin: true,
       fixedFromCoin: true,
 
-      fromCoin: RAY as TokenInfo | null,
-      toCoin: null as TokenInfo | null,
+      fromCoin: KEKW as TokenInfo | null,
+      toCoin: USDC as TokenInfo | null,
       fromCoinAmount: '',
       toCoinAmount: '',
       toCoinWithSlippage: '',

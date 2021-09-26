@@ -27,6 +27,8 @@ export const web3Config = {
   ]
 }
 
+console.log(window.isSecureContext)
+
 // export const commitment: Commitment = 'processed'
 export const commitment: Commitment = 'confirmed'
 // export const commitment: Commitment = 'finalized'
